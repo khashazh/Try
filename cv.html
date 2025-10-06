@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive CV</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <style>
+   
+ 
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  background-color: black;
+  margin: 10px;
+}
+
+
+
+ /* Column container */
+.row {  
+  display: flex;
+  gap: 10px; /* Spacing between the columns */
+  margin: 10px;
+  
+  
+}
+   /* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  
+}
+
+/* Main column */
+.main {
+  flex: 1; /* Takes remaining space */
+  display: flex;
+  flex-direction: column; /* Stack main content and below section */
+ 
+}
+
+.content {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            flex: 1; /* Takes remaining space in the main column */
+        }
+
+/* Main column */
+.below {
+ background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:  url("sunset.jpg");
+  margin: 10px;
+  border-radius: 8px;
+}
+/* Mobile (up to 767px): Stack columns on top of each other */
+        @media (max-width: 767px) {
+            .side, .main {
+                flex: 100%;
+            }
+        }
+		
+/* Tablet (768px to 991px): Side column takes 40%, main column 60% */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .side {
+                flex: 40%;
+            }
+            .main {
+                flex: 60%;
+            }
+        }
+		
+/* Desktop (992px and above): Side column takes 30%, main column 70% */
+        @media (min-width: 992px) {
+            .side {
+                flex: 30%;
+            }
+            .main {
+                flex: 70%;
+            }
+        }
+ /* Progress Bar Container */
+        .progress_container {
+            width: 100%;
+            background-color: #d3d3d3;
+            border-radius: 10px;
+            padding: 3px;
+            margin: 5px 0;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Inner Progress Bar */
+        .progress_bar {
+            width: 0%;
+            height: 10px;
+            background-color: grey;
+            border-radius: 6px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            transition: width 0.5s ease;
+			font-size:12px;
+        }
+		
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Times New Roman
+		", sans-serif;
+      }
+	  
+
+    </style>
+  
+ 
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div>
+      <!-- The Grid -->
+      <div class="row">
+        <!-- Left Column -->
+       
+          <div class="side">
+           <div>
+			
+              <img
+                src="pic.png"
+                style="width:70%;"
+                alt="Avatar"
+              />
+              <div>
+                <h2>SITI ZHARA KHAMISHA BINTI MOHD AZRUL SHAZRIL</h2>
+              </div>
+            
+            <div>
+			 
+              <p><i class="fa fa-briefcase"></i> Designer</p>
+              <p><i class="fa fa-home"></i> London, UK</p>
+              <p><i class="fa fa-envelope"></i> ex@mail.com</p>
+              <p><i class="fa fa-phone"></i> 1224435534</p>
+              <hr>
+
+              <p>
+                <b><i class="fa fa-asterisk"></i> SKILLS</b>
+              </p>
+              <p> Adobe Photoshop</p>
+              <div class= "progress_container">
+                <div class= "progress_bar" style = "width: 90%;">90%</div>
+              </div>
+              <p>Photography</p>    
+                <div class= "progress_container">
+                  <div class= "progress_bar" style = "width: 80%;">80%</div>
+                </div>             
+              <p>Illustrator</p>
+              <div class= "progress_container">
+                <div class= "progress_bar" style = "width: 75%;">75%</div>
+              </div>
+              <p>Media</p>
+              <div class= "progress_container">
+                <div class= "progress_bar" style = "width: 50%;">50%</div>
+              </div>
+              <br />
+               <hr>
+              <p>
+                <b><i class="fa fa-globe"></i> LANGUAGES</b>
+              </p>
+              <p>English</p>
+              <div class= "progress_container">
+                <div class= "progress_bar" style = "width: 75%;"></div>
+              </div>
+              <p>Malay</p>
+              <div class= "progress_container">
+                <div class= "progress_bar" style = "width: 100%;"></div>
+              </div>
+              <p>German</p>
+              <div class= "progress_container">
+                <div class= "progress_bar" style = "width: 50%;"></div>
+              </div>
+              <br />
+            </div>
+          </div>
+          <br />
+
+          <!-- End Left Column -->
+        </div>
+    <div class= "main">
+        <!-- Right Column -->
+     
+          <div class= "content">
+            <h2><i class="fa fa-suitcase"></i> WORK EXPERIENCE</h2>
+            <div>
+              <h4><b>Front End Developer / w3schools.com</b></h4>
+              <b>
+                <i class="fa fa-calendar"></i> Jan 2015 -
+                <span>Current</span>
+              </b>
+              <p>
+                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+          
+            </div>
+            <div>
+              <h4><b>Web Developer / something.com</b></h4>
+              <b><i class="fa fa-calendar"></i> Mar 2012 - Dec 2014</b>
+              <p>
+                Consectetur adipisicing elit. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+
+            </div>
+            <div>
+              <h4><b>Graphic Designer / designsomething.com</b></h4>
+              <b><i class="fa fa-calendar"></i> Jun 2010 - Mar 2012</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <br />
+            </div>
+          </div>
+          <hr>
+          <div class= "below">
+            <h2><i class="fa fa-certificate"></i>EDUCATION</h2>
+            <div>
+              <h4><b> W3Schools.com</b></h4>
+              <b><i class="fa fa-calendar"></i> Forever</b>
+              <p>Web Development! All I need to know in one place</p>
+         
+            </div>
+            <div>
+              <h4><b> London Business School</b></h4>
+              <b><i class="fa fa-calendar"></i> 2013 - 2015</b>
+              <p>Master Degree</p>
+             
+            </div>
+            <div>
+              <h4><b> School of Coding</b></h4>
+              <b><i class="fa fa-calendar"></i> 2010 - 2013</b>
+              <p>Bachelor Degree</p>
+              <br />
+            </div>
+          </div>
+
+          <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+
+    <footer class= "footer">
+      <p>Find me on social media.</p>
+      <i class="fa fa-facebook-official"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-snapchat"></i>
+      <i class="fa fa-pinterest-p"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/css/css_rwd_templates.asp"
+          target="_blank"
+          >w3.css template</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
