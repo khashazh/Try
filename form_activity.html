@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full Name" required minlength="3">
+      
+	  <label for="numb">Phone Number</label>
+      <input type="tel" id="numb" name="numb" placeholder="Enter your Phone Number" required minlength="1">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required minlength="3">
+
+      <label for="sub">Subject</label>
+      <input type="text" id="sub" name="sub" placeholder="Enter your Subject" required minlength="3">
+      
+	   <div class="radio-group">
+          <label>User's preferred method of contact :</label><br>
+          <input type="radio" id="cEmail" name="cMethod" value="Email">
+          <label for="cEmail">Email</label><br>
+	   
+	      <input type="radio" id="cPhone" name="cMethod" value="Phone">
+          <label for="cPhone">Phone</label><br>
+     
+          <input type="radio" id="cNone" name="cMethod" value="None">
+          <label for="cNone">None</label><br>
+       </div>
+	
+	  <label> How did you hear about us?:</label>
+      <select name="Opt" id="Opt">
+      <option value="Google">Google</option> 
+      <option value="Friends">Friends</option> 
+      <option value="Etc">Etc</option>
+      </select><
+ 
+	  <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message" required minlength="3"></textarea>
+
+      <label> Click on the "Choose File" button to upload a file:</label><br>
+      <action="/action_page.php">
+      <input type="file" id="myFile" name="filename">
+
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</body>
+</html>
